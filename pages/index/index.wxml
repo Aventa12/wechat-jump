@@ -1,0 +1,6 @@
+<view class="page" bindtouchstart="press" bindtouchend="release" bindtouchcancel="cancel">
+  <view class="header"><view><view class="eyebrow">TAKE A LITTLE LEAP</view><view class="title">轻跃</view></view><view class="record">已跳过<text>{{steps}} 个台阶</text></view></view>
+  <view class="score"><view class="scoreboard"><view class="stat"><text class="stat-label">本局得分</text><text class="stat-value">{{score}}</text></view><view class="stat"><text class="stat-label">个人最佳</text><text class="stat-value">{{best}}</text></view><view class="stat reward-stat"><text class="stat-label">复活机会</text><text class="stat-value">{{revives}}</text></view></view><view class="message">{{message}}</view><view class="reward-help">金色 + 台阶：落台获得复活，跌落自动使用</view></view>
+  <canvas id="game" type="2d" class="canvas" disable-scroll="true" />
+  <view class="footer"><view class="meter"><view class="fill" style="width: {{power}}%"></view></view><view class="hint">{{over ? '本次得分 ' + score + ' · 点击下方按钮再试一次' : '目标距离 ' + distanceRatio + ' · 准星变绿时松手'}}</view><button class="restart" catchtouchstart="cancel" catchtouchend="restartFromTouch" catchtouchcancel="cancel" catchtap="restartFromTap">{{over ? '再跳一次' : '重新开始'}}</button></view>
+</view>

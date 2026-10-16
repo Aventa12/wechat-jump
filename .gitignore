@@ -1,0 +1,6 @@
+# Local WeChat Developer Tools preferences
+project.private.config.json
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

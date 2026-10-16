@@ -1,0 +1,4 @@
+{
+  "pages": ["pages/index/index"],
+  "window": {"navigationBarTitleText": "轻跃 · 跳一跳", "navigationBarBackgroundColor": "#edf4f2", "navigationBarTextStyle": "black", "backgroundColor": "#edf4f2"}
+}
